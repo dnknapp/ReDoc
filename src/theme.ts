@@ -53,9 +53,9 @@ const defaultTheme: ThemeInterface = {
     fontFamily: 'Source Code Pro, monospace',
   },
   links: {
-    color: ({ colors }) => colors.brand,
-    visited: ({ colors }) => colors.brand,
-    hover: ({ colors }) => colors.brandDark,
+    color: ({ colors }) => colors.link,
+    visited: ({ colors }) => colors.link,
+    hover: ({ colors }) => colors.brand,
   },
   menu: {
     width: '260px',
