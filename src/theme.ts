@@ -8,20 +8,24 @@ const defaultTheme: ThemeInterface = {
     large: '105rem',
   },
   colors: {
-    main: '#32329f',
-    success: '#00aa13',
+    main: '#000000',
+    brand: '#3BB878',
+    brandDark: '#35a56b',
+    success: '#3BB878',
     redirect: '#ffa500',
-    error: '#e53935',
+    error: '#E74C3C',
     info: '#87ceeb',
-    text: '#263238',
+    text: '#4C4C4C',
     warning: '#f1c400',
+    link: '#0089bc',
+    hover: '#005170',
     http: {
-      get: '#6bbd5b',
-      post: '#248fb2',
-      put: '#9b708b',
+      get: '#3BB878',
+      post: '#0089BC',
+      put: '#8468A4',
       options: '#d3ca12',
-      patch: '#e09d43',
-      delete: '#e27a7a',
+      patch: '#F4A63E',
+      delete: '#EC6565',
       basic: '#999',
       link: '#31bbb6',
     },
@@ -34,35 +38,36 @@ const defaultTheme: ThemeInterface = {
     requireLabelColor: theme => theme.colors.error,
   },
   baseFont: {
-    size: '14px',
+    size: '15px',
     lineHeight: '1.5',
-    weight: '300',
-    family: 'Roboto, sans-serif',
+    weight: '400',
+    family: 'Lato, sans-serif',
     smoothing: 'antialiased',
     optimizeSpeed: true,
   },
   headingsFont: {
-    family: 'Montserrat, sans-serif',
+    family: 'Lato, sans-serif',
   },
   code: {
     fontSize: '13px',
-    fontFamily: 'Courier, monospace',
+    fontFamily: 'Source Code Pro, monospace',
   },
   links: {
-    color: ({ colors }) => colors.main,
-    visited: ({ colors }) => colors.main,
-    hover: ({ colors }) => lighten(0.2, colors.main),
+    color: ({ colors }) => colors.brand,
+    visited: ({ colors }) => colors.brand,
+    hover: ({ colors }) => colors.brandDark,
   },
   menu: {
     width: '260px',
-    backgroundColor: '#fafafa',
+    backgroundColor: '#EBEFF0',
   },
   logo: {
     maxHeight: ({ menu }) => menu.width,
     maxWidth: ({ menu }) => menu.width,
+    padding: '1.5rem 3rem 2rem',
   },
   rightPanel: {
-    backgroundColor: '#263238',
+    backgroundColor: '#2D3339',
     width: '40%',
   },
 };
@@ -112,12 +117,16 @@ export interface ResolvedThemeInterface {
   };
   colors: {
     main: string;
+    brand: string;
+    brandDark: string;
     success: string;
     redirect: string;
     error: string;
     info: string;
     text: string;
     warning: string;
+    link: string;
+    hover: string;
     http: {
       get: string;
       post: string;
@@ -163,6 +172,7 @@ export interface ResolvedThemeInterface {
   logo: {
     maxHeight: string;
     maxWidth: string;
+    padding: string;
   };
   rightPanel: {
     backgroundColor: string;

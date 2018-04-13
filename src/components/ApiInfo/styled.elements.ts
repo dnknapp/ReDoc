@@ -12,13 +12,19 @@ export const ApiHeader = H1.extend`
 `;
 
 export const DownloadButton = styled.a`
-  border: 1px solid ${props => props.theme.colors.main};
-  color: ${props => props.theme.colors.main};
-  font-weight: normal;
+  background-color: ${props => props.theme.colors.brand};
+  color: #FFFFFF!important;
+  font-size 13px;
+  font-weight: 600;
   margin-left: 0.5em;
-  padding: 4px 8px 4px;
+  padding: 10px 24px;
   display: inline-block;
+  border-radius: 3px;
   text-decoration: none;
+  
+  &:hover {
+    background-color: ${props => props.theme.colors.brandDark};
+  }
 `;
 
 export const InfoSpan = styled.span`

@@ -13,7 +13,7 @@ export interface DropdownProps {
   onChange: (val: DropdownOption) => void;
 }
 
-export const StyledDropdown = withProps<DropdownProps>(styled(Dropdown))`
+export const StyledDropdown = withProps<DropdownProps>(styled(Dropdown)) `
   min-width: 100px;
   display: inline-block;
   position: relative;
@@ -23,13 +23,13 @@ export const StyledDropdown = withProps<DropdownProps>(styled(Dropdown))`
   .Dropdown-control  {
     font-family: ${props => props.theme.headingsFont.family};
     position: relative;
-    font-size: .929em;
+    font-size: .933em;
     width: 100%;
     line-height: 1.5em;
     vertical-align: middle;
     cursor: pointer;
     border-color: rgba(38, 50, 56, 0.5);
-    color: #263238;
+    color: #4C4C4C;
     outline: none;
     padding: 0.15em 1.5em 0.2em 0.5em;
     border-radius: 2px;
@@ -75,7 +75,7 @@ export const StyledDropdown = withProps<DropdownProps>(styled(Dropdown))`
 
   .Dropdown-option {
     font-size: 0.9em;
-    color: #263238;
+    color: #4C4C4C;
     cursor: pointer;
     padding: 0.4em;
 
@@ -92,7 +92,7 @@ export const StyledDropdown = withProps<DropdownProps>(styled(Dropdown))`
 export const SimpleDropdown = StyledDropdown.extend`
   margin-left: 10px;
   text-transform: none;
-  font-size: 0.929em;
+  font-size: 0.933em;
 
   .Dropdown-control  {
     font-size: 1em;
@@ -109,6 +109,6 @@ export const SimpleDropdown = StyledDropdown.extend`
 export const MimeLabel = styled.span`
   margin-left: 10px;
   text-transform: none;
-  font-size: 0.929em;
+  font-size: 0.933em;
   color: black;
 `;

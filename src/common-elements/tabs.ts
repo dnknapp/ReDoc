@@ -3,7 +3,7 @@ import styled from '../styled-components';
 
 export { Tab, TabList, TabPanel } from 'react-tabs';
 
-export const Tabs = styled(ReactTabs)`
+export const Tabs = styled(ReactTabs) `
   > ul {
     list-style: none;
     padding: 0;
@@ -66,7 +66,7 @@ export const SmallTabs = Tabs.extend`
     > li {
       padding: 0;
       margin-right: 20px;
-      font-size: 12px;
+      font-size: .933em;
       padding: 2px 0;
       border-bottom: 1px dashed;
       color: #787b7d;

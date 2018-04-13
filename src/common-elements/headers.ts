@@ -1,9 +1,9 @@
 import styled, { css } from '../styled-components';
 
 const headerFontSize = {
-  1: '1.85714em',
-  2: '1.57143em',
-  3: '1.27em',
+  1: '1.714em',
+  2: '1.5',
+  3: '1.25em',
 };
 
 export const headerCommonMixin = level => css`
@@ -29,11 +29,12 @@ export const H3 = styled.h2`
 `;
 
 export const UnderlinedHeader = styled.h5`
-  border-bottom: 1px solid rgba(38, 50, 56, 0.3);
+  border-bottom: 1px solid #D8DFDE;
   margin: 1em 0 1em 0;
-  color: rgba(38, 50, 56, 0.5);
+  padding-bottom: 4px;
+  color: rgba(116, 116, 116, 1);
   font-weight: normal;
-  text-transform: uppercase;
-  font-size: 0.929em;
+  text-transform: capitalize;
+  font-size: 0.933em;
   line-height: 20px;
 `;

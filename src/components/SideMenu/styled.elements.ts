@@ -5,7 +5,7 @@ import styled, { css, withProps } from '../../styled-components';
 
 export const OperationBadge = withProps<{ type: string }>(styled.span).attrs({
   className: props => `operation-type ${props.type}`,
-})`
+}) `
   width: 26px;
   display: inline-block;
   height: ${props => props.theme.code.fontSize};;
@@ -62,26 +62,26 @@ export const OperationBadge = withProps<{ type: string }>(styled.span).attrs({
 
 function menuItemActiveBg(depth): string {
   if (depth > 1) {
-    return '#e1e1e1';
+    return '#D8DFDE';
   } else if (depth === 1) {
-    return '#f0f0f0';
+    return '#F3F6F5';
   } else {
     return '';
   }
 }
 
-export const MenuItemUl = withProps<{ active: boolean }>(styled.ul)`
+export const MenuItemUl = withProps<{ active: boolean }>(styled.ul) `
   margin: 0;
   padding: 0;
 
   & & {
-    font-size: 0.929em;
+    font-size: 14px;
   }
 
   ${props => (props.active ? '' : 'display: none;')};
 `;
 
-export const MenuItemLi = withProps<{ depth: number }>(styled.li)`
+export const MenuItemLi = withProps<{ depth: number }>(styled.li) `
   list-style: none inside none;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -91,16 +91,18 @@ export const MenuItemLi = withProps<{ depth: number }>(styled.li)`
 
 export const menuItemDepth = {
   0: css`
-    opacity: 0.7;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    padding-bottom: 0;
+    opacity: 1;
+    text-transform: capitalize;
+    font-size: 13px;
+    margin: 0 ${props => props.theme.spacingUnit}px;
+    padding: 0;
     cursor: default;
     color: ${props => props.theme.colors.text};
+    border-bottom: 1px solid #D8DFDE; 
   `,
   1: css`
-    font-size: 0.929em;
-    text-transform: uppercase;
+    font-size: 14px;
+    text-transform: capitalize;
     &:hover {
       color: ${props => props.theme.colors.main};
     }
@@ -121,11 +123,11 @@ export const MenuItemLabel = withProps<{
     classnames('-depth' + props.depth, {
       active: props.active,
     }),
-})`
+}) `
   cursor: pointer;
   color: ${props => (props.active ? props.theme.colors.main : props.theme.colors.text)};
   margin: 0;
-  padding: 12.5px ${props => props.theme.spacingUnit}px;
+  padding: 12px ${props => props.theme.spacingUnit}px;
   ${({ depth, type, theme }) =>
     (type === 'section' && depth > 1 && 'padding-left: ' + theme.spacingUnit * 2 + 'px;') || ''}
   display: flex;
@@ -141,7 +143,7 @@ export const MenuItemLabel = withProps<{
   }
 `;
 
-export const MenuItemTitle = withProps<{ width?: string }>(styled.span)`
+export const MenuItemTitle = withProps<{ width?: string }>(styled.span) `
   display: inline-block;
   vertical-align: middle;
   width: ${props => (props.width ? props.width : 'auto')};

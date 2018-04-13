@@ -24,7 +24,7 @@ const DEFAULT_SPEC = 'openapi.yaml';
 class DemoApp extends React.Component<
   {},
   { specUrl: string; dropdownOpen: boolean; cors: boolean }
-> {
+  > {
   constructor(props) {
     super(props);
 
@@ -140,7 +140,7 @@ const Heading = styled.nav`
   height: 50px;
   box-sizing: border-box;
   background: white;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid #D8DFDE;
   z-index: 10;
   padding: 5px;
 

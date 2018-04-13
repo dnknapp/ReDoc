@@ -61,8 +61,8 @@ export const PropertyNameCell = PropertyCell.extend`
   vertical-align: top;
   line-height: 20px;
   white-space: nowrap;
-  font-size: 0.929em;
-  font-weight: 300;
+  font-size: 0.933em;
+  font-weight: 400;
   font-family: ${props => props.theme.headingsFont.family};
 
   &.deprecated {
@@ -71,7 +71,7 @@ export const PropertyNameCell = PropertyCell.extend`
 `;
 
 export const PropertyDetailsCell = styled.td`
-  border-bottom: 1px solid #9fb4be;
+  border-bottom: 0 solid #D8DFDE;
   padding: 10px 0;
   width: ${props => props.theme.schemaView.defaultDetailsWidth};
   box-sizing: border-box;
@@ -133,7 +133,7 @@ export const PropertiesTable = styled.table`
     ${InnerPropertiesWrap}
     ${InnerPropertiesWrap} {
     margin: 1em 0 1em 1em;
-    background: #f0f0f0;
+    background: #F4F8F8;
   }
 
   &

@@ -12,7 +12,7 @@ export const MimeLabel = styled.div`
 export const InvertedSimpleDropdown = StyledDropdown.extend`
   margin-left: 10px;
   text-transform: none;
-  font-size: 0.929em;
+  font-size: 0.933em;
   border-bottom: 1px solid rgba(255, 255, 255, 0.9);
   margin: 0 0 10px 0;
   display: block;

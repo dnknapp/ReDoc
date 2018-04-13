@@ -6,6 +6,7 @@ export const LogoImgEl = styled.img`
   max-width: ${props => props.theme.logo.maxWidth};
   width: 100%;
   display: block;
+  padding: ${props => props.theme.logo.padding};
 `;
 
 export const LogoWrap = styled.div`

@@ -25,9 +25,9 @@ export const jsonStyles = css`
   }
 
   .type-string {
-    color: #66b16e;
+    color: #3BB878;
     & + a {
-      color: #66b16e;
+      color: #3BB878;
       text-decoration: underline;
     }
   }

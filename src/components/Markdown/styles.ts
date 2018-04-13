@@ -28,7 +28,7 @@ export const markdownCss = css`
   }
 
   code {
-    color: #e53935;
+    color: #E74C3C;
     background-color: rgba(38, 50, 56, 0.04);
     font-family: ${props => props.theme.code.fontFamily};
     border-radius: 2px;
@@ -40,7 +40,7 @@ export const markdownCss = css`
   pre {
     font-family: ${props => props.theme.code.fontFamily};
     white-space: pre-wrap;
-    background-color: #263238;
+    background-color: #4C4C4C;
     color: white;
     padding: 12px 14px 15px 14px;
     overflow-x: auto;
@@ -99,17 +99,17 @@ export const markdownCss = css`
 
   table tr {
     background-color: #fff;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #D8DFDE;
 
     &:nth-child(2n) {
-      background-color: #f8f8f8;
+      background-color: #EBEFF0;
     }
   }
 
   table th,
   table td {
     padding: 6px 13px;
-    border: 1px solid #ddd;
+    border: 1px solid #D8DFDE;
   }
 
   table th {

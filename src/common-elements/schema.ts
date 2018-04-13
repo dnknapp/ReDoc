@@ -11,11 +11,11 @@ export const OneOfLabel = styled.span`
   font-size: 0.9em;
   margin-right: 10px;
   color: ${props => props.theme.colors.main};
-  font-family: Montserrat;
+  font-family: Lato;
 }
 `;
 
-export const OneOfButton = withProps<{ active: boolean }>(styled.li)`
+export const OneOfButton = withProps<{ active: boolean }>(styled.li) `
   display: inline-block;
   margin-right: 10px;
   font-size: 0.8em;

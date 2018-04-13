@@ -8,7 +8,7 @@ export const ClickablePropertyNameCell = PropertyNameCell.extend`
 
 export const FieldLabel = styled.span`
   vertical-align: middle;
-  font-size: 0.929em;
+  font-size: 0.933em;
   line-height: 20px;
 `;
 
@@ -28,7 +28,7 @@ export const TypeFormat = TypeName;
 
 export const RequiredLabel = FieldLabel.withComponent('div').extend`
   color: ${props => props.theme.schemaView.requireLabelColor};
-  font-size: 11px;
+  font-size: 12px;
   font-weight: normal;
   margin-left: 20px;
   line-height: 1;

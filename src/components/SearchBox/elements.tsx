@@ -8,14 +8,15 @@ export const SearchWrap = styled.div`
 
 export const SearchInput = styled.input.attrs({
   className: 'search-input',
-})`
+}) `
   width: calc(100% - ${props => props.theme.spacingUnit * 2}px);
   box-sizing: border-box;
   margin: 0 ${props => props.theme.spacingUnit}px;
   padding: 5px ${props => props.theme.spacingUnit / 2}px 5px ${props => props.theme.spacingUnit}px;
   border: 0;
-  border-bottom: 1px solid #e1e1e1;
-  font-weight: bold;
+  border-bottom: 1px solid #D8DFDE;
+  font-family: ${props => props.theme.baseFont.family};
+  font-weight: 400;
   font-size: 13px;
   color: ${props => props.theme.colors.text};
   background-color: transparent;
@@ -35,7 +36,7 @@ export const SearchIcon = styled((props: any) => (
   </svg>
 )).attrs({
   className: 'search-icon',
-})`
+}) `
   position: absolute;
   left: ${props => props.theme.spacingUnit}px;
   height: 1.8em;
@@ -51,8 +52,8 @@ export const SearchResultsBox = styled.div`
   background-color: #ededed;
   min-height: 150px;
   max-height: 250px;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #D8DFDE;
+  border-bottom: 1px solid #D8DFDE;
   margin-top: 10px;
   line-height: 1.4;
   font-size: 0.9em;
@@ -63,7 +64,7 @@ export const SearchResultsBox = styled.div`
     padding-bottom: 6px;
 
     &:hover {
-      background-color: #e1e1e1;
+      background-color: #D8DFDE;
     }
 
     > svg {
@@ -71,7 +72,7 @@ export const SearchResultsBox = styled.div`
     }
 
     &.active {
-      background-color: #e1e1e1;
+      background-color: #D8DFDE;
     }
   }
 `;

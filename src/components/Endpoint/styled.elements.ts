@@ -11,12 +11,12 @@ export const ServerRelativeURL = styled.span`
   margin-left: 10px;
 `;
 
-export const EndpointInfo = withProps<{ expanded?: boolean; inverted?: boolean }>(styled.div)`
+export const EndpointInfo = withProps<{ expanded?: boolean; inverted?: boolean }>(styled.div) `
   padding: 10px 30px 10px ${props => (props.inverted ? '10px' : '20px')};
   border-radius: ${props => (props.inverted ? '0' : '4px 4px 0 0')};
-  background-color: ${props => (props.inverted ? 'transparent' : '#222d32')};
+  background-color: ${props => (props.inverted ? 'transparent' : '#171e21')};
   display: block;
-  font-weight: 300;
+  font-weight: 400;
   white-space: nowrap;
   overflow-x: hidden;
   text-overflow: ellipsis;
@@ -33,13 +33,13 @@ export const EndpointInfo = withProps<{ expanded?: boolean; inverted?: boolean }
 
 export const HttpVerb = withProps<{ type: string }>(styled.span).attrs({
   className: props => `http-verb ${props.type}`,
-})`
-  font-size: 0.929em;
+}) `
+  font-size: 0.933em;
   line-height: 20px;
   background-color: ${props => props.theme.colors.http[props.type] || '#999999'};
   color: #ffffff;
   padding: 3px 10px;
-  text-transform: uppercase;
+  text-transform: none;
   font-family: ${props => props.theme.headingsFont.family};
   margin: 0;
 `;
@@ -50,12 +50,12 @@ export const HttpVerb = withProps<{ type: string }>(styled.span).attrs({
 // border-bottom: 1px solid rgba(0,0,0,0.33);
 // padding-left: 10px;
 
-export const ServersOverlay = withProps<{ expanded: boolean }>(styled.div)`
+export const ServersOverlay = withProps<{ expanded: boolean }>(styled.div) `
   position: absolute;
   width: 100%;
   z-index: 100;
-  background: #fafafa;
-  color: #263238;
+  background: #F3F6F5;
+  color: #4C4C4C;
   box-sizing: border-box;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.33);
   overflow: hidden;
